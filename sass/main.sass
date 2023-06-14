@@ -23,8 +23,6 @@ body
   color: $color__negro
   background-color: $color__fondo
   margin: 0
-
-html
   scroll-behavior: smooth
 
 //COMPONENTES
@@ -34,8 +32,6 @@ html
     right: $gap__m
   margin: 0 auto
   max-width: $container__m
-  @media all and (max-width: 700px)
-    flex-direction: column-reverse
 
 .img
   width: 100%
@@ -101,8 +97,6 @@ html
   &__text
     color: white
 
-
-
 //PRICING
 .pricing
   padding:
@@ -114,48 +108,26 @@ html
     justify-content: space-evenly
     align-items: start
 .article
-  flex-grow: 1
-  flex-basis: 0
-  flex-shrink: 1
-  display: grid
-  grid-template-columns: 1fr
-  grid-template-rows: 4rem 8rem 9rem 3rem 5rem 20rem 3rem
-  grid-template-areas: "row1" "row2" "row3" "row4" "row5" "row6" "row7"
-  border:
-    top: 1px solid darkgrey
-    bottom: 1px solid darkgrey
-    left: 1px solid darkgrey
   padding: 1.5rem
   &:last-child
     border:
       right: 1px solid darkgrey
   &__name
-    grid-area: row1
     font-family: $font__title
     font-weight: normal
-  &__description
-    grid-area: row2
   &__price
-    grid-area: row3
-    align-self: end
     &--numbers
       display: block
       font-size: 3rem
       font-family: $font__text
       font-weight: bold
-  &__contacts
-    grid-area: row4
   &__button
     box-sizing: border-box
-    grid-area: row5
-    align-self: center
     width: 100%
   &__about
-    grid-area: row7
     font-weight: bold
 
 .advantages
-  grid-area: row6
   color: $color__negro
   &__description
     font-weight: bold

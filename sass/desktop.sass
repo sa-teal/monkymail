@@ -1,0 +1,32 @@
+@use "main"
+
+// PRICING
+.article
+  flex-grow: 1
+  flex-basis: 0
+  flex-shrink: 1
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 4rem 8rem 9rem 3rem 5rem 20rem 3rem
+  grid-template-areas: "row1" "row2" "row3" "row4" "row5" "row6" "row7"
+  border:
+    top: 1px solid darkgrey
+    bottom: 1px solid darkgrey
+    left: 1px solid darkgrey
+  &:last-child
+    border:
+      right: 1px solid darkgrey
+  &__name
+    grid-area: row1
+  &__description
+    grid-area: row2
+  &__price
+    grid-area: row3
+    align-self: end
+  &__contacts
+    grid-area: row4
+  &__button
+    grid-area: row5
+    align-self: center
+  &__abouT
+    grid-area: row7
