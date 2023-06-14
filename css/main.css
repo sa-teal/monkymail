@@ -38,7 +38,7 @@ html {
   text-decoration: underline;
 }
 .link--light {
-  color: #89E0E0;
+  color: #f7b954;
 }
 
 .button {
@@ -64,7 +64,7 @@ html {
 }
 
 .banner {
-  background-color: #89E0E0;
+  background-color: #f7b954;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -99,16 +99,11 @@ html {
   gap: 1rem;
 }
 
-.banner {
-  background-color: #009191;
-}
 .banner .container {
   text-align: center;
 }
 .banner__text {
   color: white;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pricing {
