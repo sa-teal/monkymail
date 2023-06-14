@@ -1,0 +1,45 @@
+:root {
+    --fondo: #f2f6f2;
+    --color-corpo: #7ba87b;
+    --color-destacados: #b0cbb0;
+}
+/* General */
+body {
+    background-color: var(--fondo);
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1040px;
+}
+.button {
+    background-color: var(--color-corpo);
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.button__clear {
+    color: var(--color-corpo);
+    background-color: transparent;
+}
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    max-width: 1040px;
+    padding: 3rem 2rem;
+}
+.hero__text {
+    font-weight: lighter;
+    margin-bottom: 3rem;
+}
+
+/* Banner */
+.banner {
+    background-color: var(--color-destacados);
+}
+.banner__text {
+    max-width: 1040px;
+    padding: 1rem 2rem;
+    color: white;
+}

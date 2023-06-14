@@ -1,0 +1,255 @@
+body {
+  font-family: "Inter", sans-serif;
+  color: #241c15;
+  background-color: #fff;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+@media all and (max-width: 700px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.link {
+  color: #009191;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.link--light {
+  color: #89E0E0;
+}
+
+.button {
+  background-color: #009191;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.button:hover {
+  background-color: rgba(0, 145, 145, 0.7);
+}
+.button--clear {
+  background-color: transparent;
+  color: #009191;
+}
+.button--clear:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.banner {
+  background-color: #89E0E0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.hero__c1, .hero__c2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.hero__title {
+  font-family: "Shippori Mincho", serif;
+  font-size: 2.5rem;
+}
+.hero__desc {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.hero__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 1rem;
+}
+
+.banner {
+  background-color: #009191;
+}
+.banner .container {
+  text-align: center;
+}
+.banner__text {
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pricing {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 0.9rem;
+}
+.pricing .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.article {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 4rem 8rem 9rem 3rem 5rem 20rem 3rem;
+  grid-template-rows: 4rem 8rem 9rem 3rem 5rem 20rem 3rem;
+      grid-template-areas: "row1" "row2" "row3" "row4" "row5" "row6" "row7";
+  border-top: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  padding: 1.5rem;
+}
+.article:last-child {
+  border-right: 1px solid darkgrey;
+}
+.article__name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: row1;
+  font-family: "Shippori Mincho", serif;
+  font-weight: normal;
+}
+.article__description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: row2;
+}
+.article__price {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: row3;
+  -ms-grid-row-align: end;
+      align-self: end;
+}
+.article__price--numbers {
+  display: block;
+  font-size: 3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.article__contacts {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: row4;
+}
+.article__button {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  grid-area: row5;
+  -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+.article__about {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: row7;
+  font-weight: bold;
+}
+
+.advantages {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: row6;
+  color: #241c15;
+}
+.advantages__description {
+  font-weight: bold;
+}
+.advantages__ul {
+  list-style-image: url("../img/check.png");
+  padding-left: 0;
+  list-style-position: inside;
+}
+.advantages__li {
+  font-weight: lighter;
+  padding-bottom: 0.5rem;
+}
+
+.faq {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.faq__expand {
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.faq__item {
+  border-top: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  padding: 1.5rem;
+}
+.faq__item:last-child {
+  border-bottom: 1px solid darkgrey;
+}
+.faq__item__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.faq__item__title {
+  font-family: "Shippori Mincho", serif;
+  font-weight: normal;
+}
+.faq__item__desc--hidden {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
