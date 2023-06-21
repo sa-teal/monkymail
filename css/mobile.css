@@ -189,6 +189,17 @@ body {
   display: none;
 }
 
+.ul-reset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 0.5rem;
+}
+
 .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
@@ -208,4 +219,33 @@ body {
 
 .faq__item__title {
   font-size: 1.4rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  background: #009191;
+  color: #fff;
+  margin-top: 2rem;
+}
+.footer > .container {
+  width: 62rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__icon {
+  width: 2rem;
+  height: 2rem;
 }
